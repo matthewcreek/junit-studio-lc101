@@ -23,6 +23,13 @@ public class BonusBinarySearch {
             } else {
                 return mid;
             }
+            if (right - mid == 1){
+                if (sortedNumbers[right] == n){
+                    return right;
+                } else {
+                    break;
+                }
+            }
         }
         return -1;
     }
